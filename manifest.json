@@ -1,0 +1,35 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "css/icon/icon_19.png",
+      "default_popup": "login.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "script/lib/jquery.js" ],
+      "matches": [ "http://59.77.7.100/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "script/reformer.js" ],
+      "matches": [ "http://59.77.7.100/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "script/fastLogin.js" ],
+      "matches": [ "http://59.77.7.100/manage/login.jsp?*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "\u6539\u9020\u5668\u6539\u5584\u53A6\u5927\u6559\u52A1\u7CFB\u7EDF\u5728Chrome\u6D4F\u89C8\u5668\u4E0B\u7684\u517C\u5BB9\u6027\u3002\u672C\u6269\u5C55\u4E0D\u6536\u96C6\u4E2A\u4EBA\u4FE1\u606F\u3002\u8BF7\u8C28\u614E\u4F7F\u7528\uFF0C\u672C\u4EBA\u4E0D\u5BF9\u4F7F\u7528\u540E\u679C\u8D1F\u8D23\u3002",
+   "icons": {
+      "19": "css/icon/icon_19.png",
+      "48": "css/icon/icon_48.png"
+   },   "manifest_version": 2,
+   "name": "\u53A6\u95E8\u5927\u5B66\u6559\u52A1\u7CFB\u7EDF\u6539\u9020\u5668",
+   "options_page": "option.html",
+   "permissions": [ "http://59.77.7.100/*", "http://hellophpjwc.sinaapp.com/*", "http://jwc.xmu.edu.cn/*", "tabs", "notifications", "webRequest", "webRequestBlocking" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.2.7",
+   "web_accessible_resources": [ "css/styles.css", "css/bootstrap.css", "css/icon/icon_48.png", "img/glyphicons-halflings.png", "img/glyphicons-halflings-white.png", "script/lib/jquery.js", "script/lib/bootstrap.js", "script/patch.js", "script/reformer.js", "welcome.html", "option.html", "course.html" ]
+}

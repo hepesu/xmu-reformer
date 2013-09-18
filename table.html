@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>课程表辅助</title>
+<link rel='stylesheet' type='text/css' href='css/bootstrap.css' />
+<style>
+th, td {
+	text-align: center !important;
+	vertical-align:middle !important;
+	max-width: 4em;
+	min-width: 4em;
+	text-overflow: clip;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#courseTable table {
+	font-size:13px;
+	text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h3>课程表辅助</h3>
+  <hr />
+  <div class="alert alert-success">保存成日程(.ics)后，可以导入至Google日历、iOS日历、Outlook日历。非常方便！</div>
+  <div class="alert">同时有多门课的情况未处理，请自行添加。</div>
+  <div class="well form-inline">
+    <div class="btn-group">
+      <button disabled class="btn btn-primary" id="save_btn">保存修改</button>
+      <button disabled class="btn" id="ics_btn"  >日程</button>
+      <button disabled class="btn" id="print_btn"  >打印</button>
+    </div>
+  </div>
+  <div id="courseTable">
+    <center>
+      <p class="alert">- 未保存课程表 -</p>
+    </center>
+  </div>
+  <hr />
+  <div class='footer'> <span>© Hatsuame</span> </div>
+</div>
+</body>
+<script type="text/javascript" src="script/lib/jquery.js"></script>
+<script type="text/javascript" src="script/lib/filesaver.js"></script>
+<script type="text/javascript" src="script/lib/bootstrap.js"></script>
+<script type="text/javascript" src="script/reformer.js"></script>
+<script type="text/javascript" src="script/page/table.js"></script>
+</html>

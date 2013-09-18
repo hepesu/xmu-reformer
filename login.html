@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>登录</title>
+<link rel='stylesheet' type='text/css' href='css/login.css' />
+</head>
+<body>
+<div id='style2' style="padding:2px;width: 168px;"> <a class="nfl" href="http://code.google.com/p/jwc-adj/" target="_blank" style="color:black;margin-bottom:6px;padding-top:2px;background:url('css/icon/icon_19.png') no-repeat left center;"><span>厦门大学教务系统改造器</span></a>
+  <ul>
+    <li><a style="background:url('css/icon/jwxt.png') no-repeat left center;" class="nfl" href="http://59.77.7.100:8080/manage/login.jsp?siteId=58&pageId=215" target="_blank"><span>教务系统</span></a></li>
+    <li><a style="background:url('css/icon/jwc.png') no-repeat left center;" class="nfl" href="http://jwc.xmu.edu.cn/" target="_blank"><span>教务处</span></a></li>
+    <hr />
+    <li> <a style="background:url('css/icon/fl.png') no-repeat left center;" id="fast_mask" class="nfl" href="#"><span>快速登录</span></a>
+      <div id="fast" style="display:none;">
+        <form name="form" id='form' method="post" target="_blank" action='http://59.77.7.100:8080/manage/login.do'>
+          <input type="text" name="name"  id="name" style="width:140px;margin-left:4px;margin-top:4px;height: 1em;" required="required" placeholder="用户名"/>
+          <input  type="password" name="password"  placeholder="密码" id="password" style="width: 80px;margin-left:4px;margin-top:6px;height: 1em;" required="required"/>
+          <select name="style" id="style">
+            <option value="student">学生</option>
+            <option value="manager">管理</option>
+            <option value="teacher">教师</option>
+            <option value="other">其他</option>
+          </select>
+          <input type="button" id="login_btn" value="登录" style="margin:6px;"/>
+        </form>
+      </div>
+    </li>
+    <li><a class="nfl" id="table_btn" style="background:url('css/icon/table.png') no-repeat left center;" href="#"><span>课程表</span></a></li>
+	<li><a class="nfl" id="course_btn" style="background:url('css/icon/table.png') no-repeat left center;" href="#"><span>选课辅助</span></a></li>
+  </ul>
+  <hr />
+  <a  class="nfl" id="set_btn" href="#" style="color:black;background:url('css/icon/set.png') no-repeat left center;"><span>设置</span> <span style="margin-left:64px;" id="time">待更新</span></a> </div>
+</body>
+<script type="text/javascript" src="script/lib/jquery.js"></script>
+<script type="text/javascript" src="script/page/login.js"></script>
+</html>

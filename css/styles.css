@@ -1,0 +1,150 @@
+body {
+	font-family:"Microsoft YaHei" !important;
+}
+.navbar .brand {
+	margin-left: 0px !important;
+}
+.holder {
+	background-color: white;
+	border: 1px solid rgb(227, 227, 227);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	top: 60px;
+	left: 20px;
+	position: fixed;
+}
+#holderIframe {
+	height:100%;
+	width:100%;
+}
+.box-header {
+	height: 20px;
+	border: 1px solid rgb(221, 221, 221);
+	margin-bottom: -1px;
+	padding: 10px;
+	background-color: rgb(250, 250, 250);
+	background-image: -moz-linear-gradient(top, rgb(250, 250, 250), rgb(239, 239, 239));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(250, 250, 250)), to(rgb(239, 239, 239)));
+	background-image: -webkit-linear-gradient(top, rgb(250, 250, 250), rgb(239, 239, 239));
+	background-image: -o-linear-gradient(top, rgb(250, 250, 250), rgb(239, 239, 239));
+	background-image: linear-gradient(to bottom, rgb(250, 250, 250), rgb(239, 239, 239));
+ filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#efefef', GradientType=0);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 2px 2px 0px 0px;
+	-moz-border-radius: 2px 2px 0px 0px;
+	border-radius: 2px 2px 0px 0px;
+	overflow: hidden;
+}
+.box-content {
+	margin-top: -1px;
+	padding: 10px;
+	-webkit-border-radius: 0px 0px 2px 2px;
+	-moz-border-radius: 0px 0px 2px 2px;
+	border-radius: 0px 0px 2px 2px;
+	-webkit-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+	-moz-box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+	box-shadow: 0 1px 0px rgba(255, 255, 255, .6);
+}
+.box-header h2 {
+	font-size: 16px;
+	line-height: 16px;
+	float: left;
+	margin-top: 2px;
+	color: rgb(100, 100, 100);
+	font-weight: normal;
+	text-shadow: 0px 1px 0px white;
+}
+.box-header .break {
+	border-left: 1px solid rgb(252, 252, 252);
+	border-right: 1px solid rgb(221, 221, 221);
+	margin: -12px 10px -10px 10px;
+	padding: 12px 0px 10px 0px;
+}
+table {
+	width:99% !important;
+}
+input[type="button"], input[type="checkbox"], select, input[type="submit"], input[type="reset"], button {
+	background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+	border: 1px solid #aaa;
+	color: #444;
+	border-radius: 3px;
+}
+input:disabled {
+	color:#e5e5e5;
+}
+/*::-webkit-scrollbar
+{
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track-piece
+{
+	background-color: #CCCCCC;
+	-webkit-border-radius: 3px;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: #999999;
+	-webkit-border-radius: 3px;
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,.05);
+}*/
+div.hiddenBlock {
+	width:4em;
+	text-overflow:clip;
+	height:1.25em;
+	white-space:nowrap;
+	overflow:hidden;
+	cursor:pointer;
+}
+td.choose {
+	background:white;
+	cursor:pointer;
+}
+td.choose:hover {
+	background:rgb(173,206,248);
+}
+.modal-body td,th{
+	text-align: center !important;
+	vertical-align: middle !important;
+	width: 125px;
+}
+iframe::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(202, 202, 202, 0.07)), color-stop(100%, rgba(229, 229, 229, 0.07)));
+background: -webkit-linear-gradient(left, rgba(202, 202, 202, 0.07) 0%, rgba(229, 229, 229, 0.07) 100%);
+-webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, .15) inset, 0 1px 0 0 white;
+box-shadow: 0 0 1px 0 rgba(0, 0, 0, .15) inset, 0 1px 0 0 white;
+background-color: 
+rgb(229, 229, 229);
+}
+iframe::-webkit-scrollbar, iframe::-webkit-scrollbar-thumb {
+overflow: visible;
+border-radius: 2px;
+border: solid 1px rgb(166, 166, 166);
+}
+iframe::-webkit-scrollbar-thumb {
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(233, 233, 233, 0.05)), color-stop(100%, rgba(221, 221, 221, 0.05)));
+background: -webkit-linear-gradient(left, rgba(233, 233, 233, 0.05) 0%, rgba(221, 221, 221, 0.05) 100%);
+-webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .05);
+box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .05);
+background-color: 
+rgb(233, 233, 233);
+}
+iframe::-webkit-scrollbar, iframe::-webkit-scrollbar-thumb {
+overflow: visible;
+border-radius: 2px;
+border: solid 1px rgb(166, 166, 166);
+}
+iframe::-webkit-scrollbar-button {
+height: 0;
+display: block;
+background-color: 
+transparent;
+}
