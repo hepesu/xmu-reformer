@@ -1,5 +1,5 @@
 (function (window, ko, $) {
-	window.sfpgFlag = /sfpgFlag/.test(document.body.innerHTML);
+	window.sfpgFlag = /sfpgFlag/.test(document.body.innerHTML)?0:1;
 	var obj = ko.dataFor($("#topic")[0]);
 	if (!obj)
 		obj = init();
