@@ -1,5 +1,4 @@
 (function (window, ko, $) {
-	window.sfpgFlag = /sfpgFlag/.test(document.body.innerHTML)?0:1;
 	var obj = ko.dataFor($("#topic")[0]);
 	if (!obj)
 		obj = init();
@@ -22,6 +21,9 @@
 
 //None my work LOL
 function init() {
+	//Dirty fix =_=
+	window.sfpgFlag = /sfpgFlag/.test(document.body.innerHTML) ? 0 : undefined;
+
 	var index = 0;
 	var table = jQuery("#topic .zb");
 	//  类型1 = 单选
